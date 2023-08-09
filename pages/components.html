@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Computer Networks</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="../assets/icon.jpg">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="../index.html"><img src="../assets/header.png" alt="Header Image" class="header_logo"></a>
+      <div class="header_text">
+        <a href="../index.html"><h1>The Computer Network</h1></a>
+      </div>
+      <div class="navbar_toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <div class="flex-col">
+      <nav id="menu">
+        <ul class="li_none">
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="mobile_nav">
+          
+          <h2 id="main_text">Components</h2>
+          <select name="navigation" id="navigation" onchange="showSection(this.value)">
+            <option value="home">---</option>
+            <option value="cpu">CPU</option>
+            <option value="ram">RAM</option>
+            <option value="motherboard">Motherboard</option>
+            <option value="storage">Storage</option>
+            <option value="psu">PSU</option>
+            <option value="case">Case</option>
+            <option value="card">Card</option>
+          </select>
+        </div>
+        <div class="navigation" id="desktop_nav">
+          <ul>
+            <li><a href="#cpu">CPU</a> </li>
+            <li><a href="#ram">Memory</a></li>
+            <li><a href="#motherboard">Motherboard</a></li>
+            <li><a href="#storage">Storage</a></li>
+            <li><a href="#psu">PSU</a></li>
+            <li><a href="#case">Case</a></li>
+            <li><a href="#card">Expansion Cards</a></li>
+          </ul>
+        </div>
+        <section name="home" class="main_section showing" id="home">
+          <div class="overview_info">
+            <p>When it comes to the physical hardware that make up a modern computer, there are 7 components that are found in most computers today.</p>
+            <p>These include:</p>
+          </div>
+          <div class="components_list">
+            <ul>
+              <li>CPU + CPU Fan</li>
+              <li>Memory (RAM)</li>
+              <li>Motherboard</li>
+              <li>Storage (Hard Disk Drive / Solid-State Drive)</li>
+              <li>Power Supply (PSU)</li>
+              <li>Case</li>
+              <li>Expansion Cards (optional)</li>
+            </ul>
+            <img src="../assets/computer-components.jpg" height="300" alt="Picture of computer components">
+          </div>
+        </section>
+        <section id="cpu" class="cpu_section">
+          <h2>CPU</h2>
+          <p>The CPU, which stands for Central Processing Unit, is essentially the brain of a computer. It processes all of the information given to the computer into a language that the computer can understand. It will communicate and get the tasks from the RAM and perform the tasks that are required by the computer.</p>
+          <p>CPUs are usually seated in a socket that utilizes a lever or a latch with a hinged plate with a cut-out in the center to secure the CPU onto the motherboard. It has many copper pads underneath it for the socket contacts to push up against them to make electrical contact.</p>
+          <p>A processor will generate lots of heat while it is working, which is why computers will come with coolers for the CPU to keep it cool. Without it, the CPU will heat up very quickly and overheat itself within a few minutes.</p>
+          <p>The speed of a processor is measured in megahertz (<span class="case_text">MHz</span>), which are millions of instructions per second and gigahertz (<span class="case_text">GHz</span>), which are billions of instructions per second. Having a faster processor is better since it can execute the instructions given to it more quickly, but it is not the only factor when looking at the speed of a computer. The speed of a processor is referred to as its clock speed.</p>
+        </section>
+        <section id="ram" class="ram_section">
+          <h2>Memory</h2>
+          <p>Random Access Memory, or RAM, is a device used for storing data for your device that provides fast read and write access. All of a computer's proccesses are stored in RAM, but it loses all of that data when it loses power, or when the device is turned off.</p>
+          <p>In desktop computers, the RAM will plug directly into its designated slot on the motherboard. They are long slots, and depending on the motherboard, will have 2 or more slots for inserting RAM. </p>
+          <p>The size of RAM sticks are measured in megabytes (<span class="case_text">MB</span>) or gigabytes (<span class="case_text">GB</span>). The higher the amount of RAM that is installed in a computer, the more things a computer can do simultaneously. If you notice your computer starts to run a bit slower when you have many things open, it could be a good idea to add extra RAM to your computer to improve your system's performance.</p>
+          <p>RAM will always come in powers of 2, so you will always see numbers like 16GB, 32GB, or even 64GB of RAM. These are the more common memory sizes that are usually recommended depending on the use case.</p>
+        </section>
+        <section id="motherboard" class="mboard_section">
+          <h2>Motherboard</h2>
+          <p>The motherboard is the main logic board that is screwed directly inside of a computer case. All other cards and any piece of hardware is plugged directly into the motherboard. The CPU, RAM, storage drives, PSU, and any expansion cards are connected to the motherboard. It plays the most important role in integrating all of the hardware and getting them to communicate with each other.</p>
+          <p>Motherboards can come in all shapes and sizes, and can offer many different features depending on the quality of the motherboard. The higher tend to offer the most advantages with minimal disadvantages. In most cases, having a higher quality motherboard will allow the components to operate more efficiently and perform the tasks that they were designed to do.</p>
+          <p>Motherboards come in the following sizes:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Motherboard</th>
+                <th>Dimensions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Pico-ITX</th>
+                <td>3.9 inch x 2.9 inch <span class="show"> | 100mm x 72mm</span></td>
+              </tr>
+              <tr>
+                <th>Nano-ITX</th>
+                <td>4.7 inch x 4.7 inch <span class="show"> | 120mm x 120mm</span></td>
+              </tr>
+              <tr>
+                <th>Mini-ITX</th>
+                <td>6.7 inch x 6.7 inch <span class="show"> | 170mm x 170mm</span></td>
+              </tr>
+              <tr>
+                <th>Micro-ATX</th>
+                <td>9.6 inch x 9.6 inch <span class="show"> | 244mm x 244mm</span></td>
+              </tr>
+              <tr>
+                <th>Standard-ATX</th>
+                <td>12 inch x 9.6 inch <span class="show"> | 305mm x 244mm</span></td>
+              </tr>
+              <tr>
+                <th>XL-ATX</th>
+                <td>EVGA: 13.5 inch x 10.3 inch <span class="show"> | 343mm x 262mm </span>
+                  <br> Gigabyte: 13.58 inch x 10.31 inch <span class="show"> | 345mm x 262mm </span>
+                  <br> Micro-Star: 13.6 inch x 10.4 inch <span class="show"> | 345mm x 264mm</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p></p>
+        </section>
+        <section id="storage" class="storage_section">
+          <h2>Storage</h2>
+          <p>When it comes to storage, you have a few options to choose from. The 3 most common forms of storage are hard drives, and SSDs. Hard drives are the oldest out of the 3, but they are still found in many computers today. Hard drives are typical used over other options because of the storage size that it comes in. Where hard drives fall short of other options is the speed of the drives, as well as the fragile nature of the drives. One bump the wrong way can destroy a whole drive. A mechanical hard drive contains one or more platters that spin anywhere between 5200 to 10000 RPM (revolutions per minute).</p>
+          <p>An SSD is another type of hard drive, but where it differs is that it does not have any moving parts inside of drive. Instead, it uses memory chips that can hold a reasonable amount of data.</p>
+          <p>SSDs are 2.5 inch drives that plug directly into the motherboard, but there is also another smaller SSD. It is called a M.2 SSD that is shaped like a stick of gum. It operates the same as an SSD, but is much faster because motherboards have slots designated for them, while SSDs need a cable to connect.</p>
+          <p>Both storage drives have their own pros and cons, but picking one over the other depends on the user and the use case of the drive. If the drive is for storing large amounts of data then a hard drive would be the better choice, whereas if the drive is for general use in a desktop, using an SSD would be the much better option.</p>
+        </section>
+        <section id="psu" class="psu_section">
+          <h2>Power Supply</h2>
+          <p>A power supply unit, or PSU, mounts inside of the computer case. It's main function is to convert the AC mains supply from the power cord from a wall socket and supplies the correct DC voltages to all of the components inside of the computer. PSUs come in many different wattages. The higher the wattage, he higher the electrical current that can be made available to everything that needs it to function properly.</p>
+          <p>PSU wattage becomes very crucial when you plan on adding expansion cards to a computer. It is important to make note of your current PSU's wattage to know if it can provide enough power to all of your components.</p>
+          <p>PSUs play a very important role in keeping a computer rulling reliably.</p>
+        </section>
+        <section id="case" class="case_section">
+          <h2>Case</h2>
+          <p>The case is the component that houses all of the parts to make up the computer system. It is designed this way to make fitting a motherboard, wiring, and drives as easy as possible. Another important job for a case is to utilize case fans to create proper airflow to keep all internals cool and prevent any overheating parts.</p>
+          <p>Cases come in all shapes and sizes to accomodate for the various types of computer components and to meet the needs of the consumer. <br>Some computer case sizes include:</p>
+          <div class="cases_sizes overview_info">
+            <ul class="li_none li_space">
+              <li><span class="case_text">Very small form factor</span>: supports <span class="case_text">Mini ITX</span> motherboards</li>
+              <li><span class="case_text">Small form factor</span>: supports <span class="case_text">Micro ATX</span> motherboards</li>
+              <li><span class="case_text">Standard form factor</span>: supports <span class="case_text">Standard ATX</span> motherboards</li>
+              <li><span class="case_text">Larger form factor</span>: supports <span class="case_text">ATX </span> and <span class="case_text">XL-ATX</span> motherboards</li>
+            </ul>
+          </div>
+        </section>
+        <section id="card" class="card_section">
+          <h2>Expansion Cards</h2>
+          <p>With expansion cards, there are many different variations of them, but the one that we are going to focus on are video cards. A video card is an output device that processes the data from the motherboard and sends the information to the computer's screen for display. You can connect video cards to any monitor using a HMDI, DisplayPort, DVI, or VGA cable depending on the video card and monitor supported connections.</p>
+          <p>Earlier I put an optional tag next to expansion cards because they technically are not required to have a complete computer. Some processors come with the ability to output video without the need for a video card. However, what makes video cards a much better option is that a video card takes all of the burden of video processing off of the CPU, which greatly increases the performance of the computer. A video card is slower than a CPU, but they are designed to deal with operations required for rendering videos.</p>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-area">
+        <p>The Computer Network <br> Copyright &copy; 2023 <br> <a href="contact.html">lmccray9749@panther.chaffey.edu</a></p>
+        <div class="links">
+          <ul class="li_none">
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="gaming.html">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <a href="contact.html"><button>Contact Us</button></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="../js/app.js"></script>
+<script src="../js/data.js"></script>
+</html>

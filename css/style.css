@@ -1,0 +1,1008 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #232323;
+  margin: 16px;
+}
+
+.container {
+  border: 1px solid #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+  height: 100px;
+  padding: 8px;
+  background: #606060;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 16px;
+}
+
+.header_text {
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.header_text a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+}
+
+.header_logo {
+  margin-left: 3rem;
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  background-color: #232323;
+  text-align: center;
+  height: 100%;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 16px 0;
+  font-size: 1.25rem;
+  gap: 2rem;
+}
+
+
+nav ul li:hover {
+  transform: scale(1.05);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+main {
+  background-color: #444444;
+}
+
+ h2 {
+  margin: 20px 2rem;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.hero_info {
+  margin-top: 32px;
+  color: #fff;
+  padding: 0 16px;
+  font-size: 1.5rem;
+}
+
+.hero_info > h3 {
+  font-size: 1.5rem;
+}
+
+.hero_info > p {
+  padding: 8px 32px;
+  color: rgb(231, 231, 231);
+}
+
+.float_r {
+  float: right;
+}
+
+.p_overview > a {
+  text-decoration: none;
+  color: rgb(0, 162, 255);
+  cursor: pointer;
+}
+
+#homehero {
+  background-image: url("../assets/homehero.jpg");
+  height: 300px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer {
+  background-color: #606060;
+  color: #fff;
+  height: 100px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: rgb(0, 162, 255);
+}
+
+.footer-area {
+  height: 100%;
+  padding: 16px;
+  margin: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.links ul li {
+  list-style-type: none;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  margin: 8px;
+}
+
+.links ul li:hover {
+  transform: scale(1.05);
+}
+
+.links ul li a:hover {
+  color: #232323;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.links ul {
+  display: flex;
+}
+
+.contact button {
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  background: #606060;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact button:hover {
+  transform: scale(1.1);
+  color: #232323;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.list_p {
+  padding: 0px 32px;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.li_none {
+  list-style-type: none;
+}
+
+.overview_img {
+  display: block;
+  margin: auto;
+}
+
+.overview_list {
+  color: #fff;
+  display: flex;
+}
+
+.overview_list ul {
+  margin: 12px 3rem;
+}
+
+.overview_list ul li {
+  margin: 0.6rem 0;
+}
+
+.indent_li {
+  font-family: 'Mukta', sans-serif;
+  color: #969696;
+  margin-left: 1.4rem;
+  list-style-type: circle;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.overview_info, 
+.cpu_section > p,
+.ram_section > p,
+.mboard_section > p,
+.storage_section > p,
+.psu_section > p,
+.case_section > p,
+.card_section > p {
+  color: #fff;
+  padding: 0 32px;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.overview_info a {
+  text-decoration: none;
+  color: rgb(0, 162, 255);
+  cursor: pointer;
+  transition: border-bottom 0.2s ease-in;
+}
+
+.overview_info a:hover {
+  border-bottom: 1px solid #000;
+}
+
+.overview_list.overview_info {
+  margin-bottom: 0;
+}
+
+.components_list {
+  margin: 12px 3rem;
+  color: #fff;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.components_list img {
+  display: block;
+  margin: auto;
+}
+
+
+.components_list li {
+  list-style-type: decimal;
+  margin: 0.8rem;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  list-style-type: none;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  margin-bottom: 12px;
+}
+
+.navigation ul li:hover {
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  transform: scale(1.2);
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.navigation ul li a:hover {
+  color: #232323;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #000;
+  padding: 16px;
+  color: #fff;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+thead > tr {
+  border-bottom: 2px solid #000;
+}
+
+.case_text {
+  font-weight: bold;
+  color: rgb(235, 235, 235);
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.li_space li {
+  margin-bottom: 0.5rem;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+#gaminghero {
+  display: block;
+  margin: auto;
+}
+
+.companies {
+  display: flex;
+  justify-content: center;
+}
+
+.gaming_container {
+  display: flex;
+}
+
+.gaming_container > .gaming_text,
+.gaming_container > .gpu_text {
+  width: 65%;
+}
+
+.gaming_text > .overview_info > p,
+.ram_text > .overview_info > p,
+.cpu_text > .overview_info > p,
+.gpu_text > .overview_info > p,
+.resource_text > p,
+.hero_info > .overview_info > p {
+  margin-bottom: 1rem;
+}
+
+.contact_container {
+  padding: 2rem;
+  width: 80%;
+  margin: 3rem auto;
+  border-radius: 16px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_container .flex_container {
+  margin: 16px auto;
+}
+
+#contact_info {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  color: #eee;
+}
+
+.contact_address {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 32px;
+  width: 80%;
+}
+
+.contact_address ul li:first-of-type {
+  text-transform: uppercase;
+  color: #bbb;
+}
+
+.contact_address ul li {
+  color: #eee;
+}
+
+.flex_container {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 1rem 0;
+  padding: 0 32px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.6rem;
+  font-size: 1.1rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.btn_submit {
+  width: 40%;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  border: 1px solid #fff;
+  outline: none;
+  background: none;
+  color: #fff;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.btn_submit:hover {
+  color: #aaa;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.resource_info {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+#img_hover {
+  border-bottom: none;
+}
+
+.resource_text {
+  width: 70%;
+}
+
+.flex-col {
+  display: flex;
+  width: 100%;
+}
+
+.flex-col > nav {
+  width: 12%;
+  height: 100%;
+}
+
+.flex-col > main {
+  width: 100%;
+}
+
+select {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .navbar_toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3 ease-in-out;
+    background: #fff;
+    display: block;
+  }
+
+  header a img {
+    display: none;
+  }
+
+  body {
+    background-color: none;
+    margin: 0;
+  }
+
+  .container {
+    border: none;
+    margin: 0;
+  }
+
+  .flex-col {
+    display: block;
+    width: 100%;
+  }
+
+  .flex-col nav {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav ul {
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  header {
+    padding: 16px;
+  }
+
+  .header_text {
+    width: 75%;
+    margin: auto;
+  }
+
+  .header_text a {
+    text-align: left;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .header_text {
+    margin-left: 0;
+  }
+
+  .hero_info h2 {
+    margin: 0 0 24px 0;
+  }
+
+  .hero_info .overview_info {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .footer-area {
+    flex-direction: column;
+  }
+
+  .links, .contact {
+    display: none;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  .overview_list,
+  .components_list {
+    flex-direction: column-reverse;
+  }
+
+  .overview_list.overview_info {
+    padding: 0;
+  }
+
+  .overview_list.overview_info ul {
+    padding: 0 16px;
+    margin: 0 16px;
+  }
+
+  .overview_info, 
+  .cpu_section > p,
+  .ram_section > p,
+  .mboard_section > p,
+  .storage_section > p,
+  .psu_section > p,
+  .case_section > p,
+  .card_section > p {
+  font-size: 1rem;
+  padding: 0 16px;
+  }
+
+  .overview_info {
+    margin-bottom: 0;
+  }
+
+  .overview_list img {
+    height: 300px;
+  }
+
+  main > h2,
+  .mobile_nav > h2 {
+    margin: 0 16px 8px 16px;
+  }
+
+  #cases {
+    padding: 0 18px;
+  }
+
+  #overview_padding {
+    padding: 0 32px;
+  }
+
+  #overview_padding p:last-child {
+    padding: 8px 0 0 0;
+  }
+
+  .case_sizes {
+    padding: 32px;
+  }
+
+  .overview_info,
+  .list_p {
+    padding: 0 16px;
+  }
+
+  .list_p {
+    padding-top: 0;
+  }
+
+  .overview_info.float_r {
+    padding: 0;
+  }
+
+  .overview_info.float_r,
+  .overview_info.remove_space,
+  .card_section p:last-child,
+  section p:last-child,
+  section .gpu_text .overview_info p:last-child,
+  .components_list,
+  section.ram_text .overview_info p:last-child,
+  section.cpu_text .overview_info p:last-child,
+  section.gpu_text .overview_info p:last-child,
+  .cases_sizes.overview_info .li_none.li_space li:last-child {
+    padding-bottom: 16px;
+    margin-bottom: 0;
+  }
+
+  .components_list {
+    padding: 16px;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .overview_info.remove_space {
+    padding-top: 8px;
+  }
+
+  header {
+    margin-bottom: 0;
+  }
+
+  main > h2,
+  .mobile_nav > h2 {
+    margin-top: 0;
+    padding-top: 8px;
+  }
+
+  .float_r {
+    float: none;
+  }
+
+  table {
+    width: 80%;
+    padding: 300px;
+  }
+
+  table, th, td {
+    margin: 0 auto;
+    font-size: 0.7rem;
+  }
+
+  th, td {
+    padding-bottom: 16px;
+  }
+
+  td {
+    text-align: center;
+  } 
+
+   .show {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 350px;
+    margin: 16px auto;
+  }
+
+  .resource_info {
+    flex-direction: column-reverse;
+  }
+
+  .resource_info img {
+    display: block;
+    margin: auto;
+  }
+
+  .resource_text {
+    width: 100%;
+  }
+
+  .mobile_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  select {
+    display: block;
+    height: 30px;
+    margin-right: 12px;
+  }
+
+  section {
+    display: none;
+  }
+  section.showing {
+    display: block;
+  }
+
+  section .overview_info {
+    padding-top: 0;
+  }
+
+  .gaming_container {
+    flex-direction: column-reverse;
+  }
+
+  .gaming_container.d-flex {
+    flex-direction: column;
+  }
+
+  .gaming_text:last-child {
+    display: block;
+    height: 100px;
+    width: 50%;
+  }
+
+  .gaming_container > .gaming_text,
+  .gaming_container > .gpu_text {
+    padding: 16px 0;
+    width: 100%;
+}
+  .overview_info.pb {
+    padding-bottom: 16px;
+  }
+
+  .gaming_container > .gaming_text {
+    padding-bottom: 0;
+  }
+
+  section.ram_text,
+  section.cpu_text,
+  section.gpu_text {
+    display: block;
+  }
+
+  section.ram_text > h2,
+  section.cpu_text > h2,
+  section.gaming_container.d-flex > h2 {
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .contact_container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact_container > h2 {
+    margin: 0 32px 8px;
+  }
+
+  #contact_info {
+    padding: 0 32px 12px;
+  }
+
+  .contact_address {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.6rem;
+  }
+
+  form {
+    margin: 16px auto;
+    padding: 8px;
+    width: 80%;
+  }
+
+  .btn_submit {
+    width: 100%;
+  }
+
+  .flex_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_container img {
+    display: none;
+  }
+
+}
+
+@media (min-width:768px) and (max-width: 1220px) {
+  body {
+    margin: 0;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+
+  .footer-area {
+    margin: 0px 3rem;
+  }
+
+  .flex-col > nav {
+    width: 20%;
+  }
+
+  .links ul {
+    font-size: 0.9rem;
+  }
+
+  .overview_list.overview_info {
+    flex-direction: column-reverse;
+  }
+
+  .contact_container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact_address {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .flex_container img {
+    content: url('../assets/mobile_contact.jpg');
+  }
+
+  .gaming_container {
+    flex-direction: column-reverse;
+  }
+
+  iframe {
+    padding: 16px 0;
+  }
+
+  .gaming_container img {
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+  }
+
+  .gaming_container .gaming_text,
+  .gaming_container .gpu_text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 908px) {
+  .flex_container img {
+    display: none;
+  }
+
+  .contact_address {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    margin: 0;
+  }
+
+  .flex-col > nav {
+    width: 15%;
+  }
+
+  .btn_submit {
+    width: 100%;
+  }
+
+  .gaming_container {
+    flex-direction: column-reverse;
+  }
+
+  .gaming_container > .gaming_text, .gaming_container > .gpu_text {
+    width: 100%;
+  }
+
+  .gaming_container img {
+    padding-right: 16px;
+    padding-bottom: 16px;
+    align-self: center;
+    aspect-ratio: auto;
+  }
+
+  .gaming_text {
+    flex-wrap: wrap;
+  }
+
+  .flex_container {
+    gap: 1.3rem;
+  }
+
+  form {
+    width: 80%;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    display: none;
+  }
+
+  header a img {
+    display: block;
+    align-self: center;
+  }
+
+  .header_logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .contact_address {
+    padding: 0px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .contact_address ul li {
+    font-size: 0.8rem;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .gaming_container img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .components_list > img,
+  .gaming_container > img {
+    padding: 0;
+    height: 250px;
+  }
+
+  iframe {
+    width: 250px;
+    height: 200px;
+  }
+
+}
