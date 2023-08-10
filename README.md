@@ -1,4 +1,4 @@
-# Computer-Networks
+# Computer Networks
 A simple website aimed at teaching users about the different components of computers.
 
 ## Technologies used
